@@ -6,6 +6,9 @@ import Nav from 'react-bootstrap/Nav'
 import './App.css';
 import NavbarBrand from 'react-bootstrap/NavbarBrand';
 import Footer from './components/Footer';
+import HomeTab from './tabs/HomeTab'
+import AboutTab from './tabs/AboutTab'
+import ContactTab from './tabs/ContactTab'
 
 
 class App extends React.Component {
@@ -64,6 +67,11 @@ class App extends React.Component {
             </Navbar.Collapse>
             
           </Navbar>
+
+          <Route path="/" exact render = {() => <HomeTab title ={this.state.home.title} subtitle ={this.state.home.subtitle}/>}/>
+          <Route path="/about" exact render = {() => <AboutTab title ={this.state.about.title} subtitle ={this.state.about.subtitle}/>}/>
+          <Route path="/contact" exact render = {() => <ContactTab title ={this.state.contact.title} f/>}/>
+          
 
           <Footer/>
         
