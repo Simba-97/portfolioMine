@@ -24,9 +24,9 @@ class App extends React.Component {
          {title: 'Contact', path: '/contact'}
         ],
        home: {
-         title: 'Hardwork is the key to success!',
-         subtitle: 'Here are some projects that I have created',
-         text: 'Check out the projects below.'
+         title: 'I am Hritik Kumar Singh!',
+         subtitle: 'I believe "Hardwork is the key to success!"',
+         text: 'Check out the projects below.',
 
        },
        about: {
@@ -70,7 +70,7 @@ class App extends React.Component {
 
           <Route path="/" exact render = {() => <HomeTab title ={this.state.home.title} subtitle ={this.state.home.subtitle}/>}/>
           <Route path="/about" exact render = {() => <AboutTab title ={this.state.about.title} subtitle ={this.state.about.subtitle}/>}/>
-          <Route path="/contact" exact render = {() => <ContactTab title ={this.state.contact.title} f/>}/>
+          <Route path="/contact" exact render = {() => <ContactTab title ={this.state.contact.title} />}/>
           
 
           <Footer/>
