@@ -6,7 +6,7 @@ import Col from 'react-bootstrap/Col'
 
 function HomePageContent(props) {
     return (
-        <Jumbotron className= "bg-transparent jumbotron-fluid">
+        <Jumbotron className= "bg text-dark jumbotron-fluid p=0">
             <Container className = "p = 0" fluid = {true}>
                 <Row className = "justify-content-left">
                     <Col sm={6}>
