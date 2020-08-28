@@ -3,6 +3,8 @@ import instagram from '../assests/images/instapic.jpg';
 import youtube from '../assests/images/youtubepic.jpg';
 import github from '../assests/images/githubpic.jpeg';
 import Card from '../components/Card';
+import Row from 'react-bootstrap/Row';
+import Container from 'react-bootstrap/Container';
 
 class Carousel extends Component {
     constructor(props) {
@@ -44,7 +46,7 @@ class Carousel extends Component {
     handleCardClick = (id, card) => {
         let items = {...this.state.items};
 
-        items[id].selected = items[id].selected? false : true;
+        items[id].selected = items[id].selected ? false : true;
 
         items.forEach(item => {
             if(item.id !== id){
@@ -64,11 +66,13 @@ class Carousel extends Component {
     }
     render() {
         return (
-            <div>
-                
-            </div>
+            <Container fluid={true}>
+                <Row className="justify-content-around">
+                    {this.makeCards(this.state.items)}
+                </Row>
+            </Container>
         );
     }
 }
 
-export default Carousel
+export default Carousel;
