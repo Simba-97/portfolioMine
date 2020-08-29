@@ -44,7 +44,8 @@ class Carousel extends Component {
     }
 
     handleCardClick = (id, card) => {
-        let items = {...this.state.items};
+        console.log(id);
+        let items = [...this.state.items];
 
         items[id].selected = items[id].selected ? false : true;
 

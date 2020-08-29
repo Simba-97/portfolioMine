@@ -11,3 +11,29 @@ code {
   font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.H-card{
+  margin : 20px;
+}
+.H-card-image{
+  border-radius: 10px;
+  width: 480px;
+  height: 480px;
+  box-shadow: 0px 0px 3px 1px #cccccc;
+}
+
+.H-card-info{
+  margin-top: 10px;
+  min-height: 100px;
+}
+
+.H-card-title{
+  font-size: 25px;
+  margin: 0px;
+
+}
+
+.H-card-subtitle{
+  font-size: 25px;
+  margin: 0px;
+}
