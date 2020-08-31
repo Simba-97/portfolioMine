@@ -38,7 +38,6 @@ export class ContactTab extends Component {
 
         this.setState({
             disabled: true,
-            emailSent: false
         });
     }
     render() {
