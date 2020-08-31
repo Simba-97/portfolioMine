@@ -7,7 +7,7 @@ function AboutTab(props) {
         <div>
             <HomePageContent title={props.title} subtitle={props.subtitle}/>
             <AboutContent>
-                hello
+                Hello There!
             </AboutContent>
         </div>
     )
