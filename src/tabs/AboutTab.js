@@ -5,7 +5,7 @@ import AboutContent from '../components/AboutContent'
 function AboutTab(props) {
     return (
         <div>
-            <HomePageContent className="justify-content-center" title={props.title} subtitle={props.subtitle}/>
+            <HomePageContent title={props.title} subtitle={props.subtitle}/>
             <AboutContent>
                 hello
             </AboutContent>
