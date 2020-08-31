@@ -36,3 +36,10 @@
     transform: rotate(360deg);
   }
 }
+h1, h2, h3 {
+  font-family: 'Times New Roman', Times, serif;
+}
+div{
+  font-family: 'Times New Roman', Times, serif;
+  font-size: large;
+}
