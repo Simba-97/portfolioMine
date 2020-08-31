@@ -1,14 +1,14 @@
 import React from 'react'
 import HomePageContent from '../components/HomePageContent'
-import AboutContent from '../components/AboutContent'
+import Content from '../components/Content'
 
 function AboutTab(props) {
     return (
         <div>
             <HomePageContent title={props.title} subtitle={props.subtitle}/>
-            <AboutContent>
-                Hello There!
-            </AboutContent>
+            <Content>
+                hello there!
+            </Content>
         </div>
     )
 }

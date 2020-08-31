@@ -36,4 +36,15 @@ code {
 .H-card-subtitle{
   font-size: 25px;
   margin: 0px;
+
+}
+
+.success-msg {
+  color: #57A773;
+  padding: 10px 20px;
+}
+
+.failure-msg {
+  color: #EE6352;
+  padding: 10px 20px;
 }

@@ -36,10 +36,14 @@
     transform: rotate(360deg);
   }
 }
-h1, h2, h3 {
-  font-family: 'Times New Roman', Times, serif;
+h1, h2, h3,{
+  font-family: Amatic SC;
 }
 div{
-  font-family: 'Times New Roman', Times, serif;
+  font-family: Shadows Into Light Two ;
   font-size: large;
+  font-weight: bold;
+}
+.bold{
+  font-weight: bold;
 }

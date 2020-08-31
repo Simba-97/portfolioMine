@@ -46,7 +46,7 @@ class App extends React.Component {
           
           <Navbar className = "border-bottom" bg = "transparent" expand="lg">
             <NavbarBrand>
-              <h3>Hi There! Welcome to my Portfoilio!</h3 >
+              <h3 className="bold">Hi There! Welcome to my Portfoilio!</h3 >
             </NavbarBrand>
             
             <Navbar.Toggle aria-controls = "navbar-toggling-system"/>
