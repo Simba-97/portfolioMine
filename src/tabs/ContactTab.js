@@ -41,7 +41,7 @@ export class ContactTab extends Component {
             disabled: true,
         });
 
-        Axios.post('/api/email', this.state)
+        Axios.post('http://localhost:3030/api/email', this.state)
             .then(res => {
                 if(res.data.success){
                     this.setState({
@@ -58,8 +58,8 @@ export class ContactTab extends Component {
                 })  
                 .catch(err => {
                     this.setState({
-                         disabled: false,
-                        emailSent: true
+                        disabled: false,
+                        emailSent: false
                     })
                 })
         
