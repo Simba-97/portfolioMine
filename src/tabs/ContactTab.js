@@ -8,6 +8,7 @@ import FormControl from 'react-bootstrap/FormControl';
 import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
+import Axios from 'axios'
 
 export class ContactTab extends Component {
     constructor(props) {
@@ -39,6 +40,29 @@ export class ContactTab extends Component {
         this.setState({
             disabled: true,
         });
+
+        Axios.post('/api/email', this.state)
+            .then(res => {
+                if(res.data.success){
+                    this.setState({
+                        disabled: false,
+                        emailSent: true
+                    })
+           
+                }else{
+                        this.setState({
+                            disabled: false,
+                            emailSent: false
+                        })
+                    }
+                })  
+                .catch(err => {
+                    this.setState({
+                         disabled: false,
+                        emailSent: true
+                    })
+                })
+        
     }
     render() {
         return (
