@@ -9,6 +9,7 @@ import Col from 'react-bootstrap/Col';
 import Row from 'react-bootstrap/Row';
 import Button from 'react-bootstrap/Button';
 import Axios from 'axios'
+import ContactFooter from '../components/ContactFooter'
 
 export class ContactTab extends Component {
     constructor(props) {
@@ -99,8 +100,11 @@ export class ContactTab extends Component {
                     {this.state.emailSent === true && <p className="d-inline success-msg">Email Sent!</p>}
                     {this.state.emailSent === false && <p className="d-inline failure-msg">Email Not Sent!</p>}
                 </Content>
+                <ContactFooter/>
             </div>
+            
         )
+       
     }
 }
 
